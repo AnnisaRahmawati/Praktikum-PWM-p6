@@ -1,0 +1,78 @@
+<!--
+Copyright 2018 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <title>My profile</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My profile</h1>
+  </header>
+  <main>
+    <section class="card">
+      <div class="img-container">
+        <!-- CC0 image from https://unsplash.com/photos/NuE8Nu3otjo -->
+        <img src="foto.jpg" alt="The earth as caputured from space, illumnitated by cosmic radiation">
+      </div>
+     <p>
+				Nama 			: Annisa Rahmawati <br/>
+				Tempat/Tgl Lahir: Klaten,06 Agustus 1998 <br/>
+				Jenis Kelamin 	: Perempuan <br/>
+				Alamat 			: Klaten <br/>
+				Agama			: Islam<br/>
+				Pekerjaan		: Mahasiswa <br/>
+				Kewarganegaraan	: WNI <br/>
+				</p>
+				<h3>Pendidikan Formal</h3>
+				<p>
+				1. 2004 -2010 : SD Muh Wedi Klaten <br/>
+				2. 2010 - 2013 : SMP Muh 8 Wedi Klaten <br/>
+				3. 2013 -2016 : SMKN 1 Jogonalan Klaten <br/>
+				</p>
+				<h3> Motto  </h3>
+				<p>
+				Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. (Albert Einstein)</p>
+				<h3> Medoia Sosial </h3>
+				<p>
+				<img src="ig.jpg" width="20 px"> : @anrw_ 
+				<img src="gmail.jpg" width="20 px"> : @annisawati68@gmail.com
+				<img src="wa.jpg" width="20 px"> : 081312****
+				</p><br/>
+  </main>
+  <footer>
+    <p> Annisa Rahmawati/165610119 <p/>
+  </footer>
+
+   <!-- TODO Register the annisa worker -->
+	<script>
+	if	('serviceWorker'	in	navigator)	{
+		navigator.serviceWorker.register('annisa-worker.js')
+		.then(function(registration)	{
+			console.log('Registered:',	registration);
+		})
+		.catch(function(error)	{
+			console.log('Registration failed: ', error);
+		});
+	}
+	</script>
+	
+</body>
+</html>
